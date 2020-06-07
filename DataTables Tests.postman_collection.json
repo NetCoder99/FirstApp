@@ -1,0 +1,35 @@
+{
+	"info": {
+		"_postman_id": "78b0ac4c-047e-4a66-b1c5-3726651320be",
+		"name": "DataTables Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/GetData?source=Employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GetData"
+					],
+					"query": [
+						{
+							"key": "source",
+							"value": "Employee"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,101 @@
+remote.js:20 Electron Deprecation Warning The 'remote' module is deprecated and will be disabled by default in a future version of Electron. To ensure a smooth upgrade and silence this warning, specify {enableRemoteModule: true} in the WebPreferences for this window.
+(anonymous) @ remote.js:20
+dbfuncs.js:13 btnDbOpen clicked
+dbfuncs.js:54 Opening database
+dbfuncs.js:61 Database was opened!!!
+dbfuncs.js:23 btnDbRead clicked
+dbfuncs.js:24 IDBDatabase {name: "postman-app", version: 210, objectStoreNames: DOMStringList, onabort: null, onclose: null, …}
+dbfuncs.js:28 --- Object Stores ---
+dbfuncs.js:29 DOMStringList {0: "api_relations", 1: "api_schemas", 2: "archived_resources", 3: "client_notifications", 4: "collection_runs", 5: "collections", 6: "console_blob", 7: "console_events", 8: "console_timelines", 9: "editor_data_cache", 10: "editor_models", 11: "editors", 12: "environments", 13: "favorited_collections", 14: "folders", 15: "globals", 16: "header_presets", 17: "helpers", 18: "history", 19: "history_responses", 20: "new_broadcasts", 21: "oauth2_access_tokens", 22: "permissions", 23: "published_collections", 24: "requests", 25: "responses", 26: "runner_blobs", 27: "runner_events", 28: "runner_runs", 29: "sync_client_buckets_by_order_id", 30: "sync_clients", 31: "user_data", 32: "user_preferences", 33: "users", 34: "variable_sessions", 35: "workspace", 36: "workspace_sessions", length: 37}
+dbfuncs.js:31 ------- Collections -------
+dbfuncs.js:33 ------- Requests -------
+dbfuncs.js:49 DbName: __dbnames
+dbfuncs.js:49 DbName: postman-app
+dbfuncs.js:80 collection:  ::  key:0eb3e765-3a92-41af-87ba-fb1fea4adc32, name:MultiProject
+dbfuncs.js:80 request:  ::  key:0c76ba6d-38cb-47ad-8466-72c2785594cb, name:Get Employees
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/GetData?source=Employee
+dbfuncs.js:80 collection:  ::  key:291e49fc-0ec5-473b-8bd5-19e5db16a316, name:Information APIs - World Health Organization (WHO)
+dbfuncs.js:80 request:  ::  key:0fab7f85-046d-4ff8-b337-b908d14323fd, name:Test1 Copy
+dbfuncs.js:85     headerDataLength:2
+dbfuncs.js:89     headerDataLength:2
+dbfuncs.js:92     url:http://localhost:8080/GetSecret
+dbfuncs.js:80 collection:  ::  key:78b0ac4c-047e-4a66-b1c5-3726651320be, name:DataTables Tests
+dbfuncs.js:80 request:  ::  key:161a9084-16b8-417d-bb11-633644236384, name:Drools Workbench Insert
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/GreetingTest2_1.0.0-SNAPSHOT
+dbfuncs.js:80 collection:  ::  key:846c401d-1c9a-4a46-be17-819e0feeea37, name:Drools Tests
+dbfuncs.js:80 collection:  ::  key:9bda30d2-da68-4279-bca8-3823c62b31e0, name:LocalApi
+dbfuncs.js:80 collection:  ::  key:9ec63cea-f6e8-4acd-b5ed-805d0d537cf5, name:Misc Tests
+dbfuncs.js:80 request:  ::  key:1c9948a7-48e8-499a-aeba-5ce93c556ac1, name:Null Demo - 001
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:23a885aa-6c12-4fbb-b9aa-8a8a666e2c2a, name:Null Demo - Fire All 
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:26566df8-2c78-405e-a73c-c5c0949cba76, name:Null Demo - Insert Claim
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:27b4f1c6-d225-4b0e-9ecd-753ef5cf1f13, name:Test1
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/GetSecret
+dbfuncs.js:80 request:  ::  key:2d1ccc09-df32-49ee-8725-4db3cebbd307, name:Kie Server Info
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/config
+dbfuncs.js:80 request:  ::  key:378f971f-aec7-4881-be17-6682866e0601, name:Drools Workbench Get Spaces
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/business-central/rest/spaces/Samples/projects
+dbfuncs.js:80 request:  ::  key:38784994-52ba-44f3-8e38-6602a695c690, name:Emergencies and Disasters News
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:https://www.who.int/feeds/entity/hac/en/rss.xml
+dbfuncs.js:80 request:  ::  key:3cc7572b-2eb0-4d9d-91ee-adc941032590, name:Kie Server Containers
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/config
+dbfuncs.js:80 request:  ::  key:3de5eec9-9191-430b-bb53-f09fd214aa71, name:Local Departments
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/departments/get
+dbfuncs.js:80 request:  ::  key:4a2cb3cc-4395-4d04-a8f0-fd478adc96fb, name:Drools Workbench Create Project
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/business-central/rest/spaces/MySpace/projects/
+dbfuncs.js:80 request:  ::  key:504365a3-8a6b-4d25-8bcf-114c66ed25dc, name:Null Demo - Get Object
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:58234aab-77c7-4036-9659-868dd50cd7ec, name:Youtube
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:https://www.googleapis.com/youtube/v3/channels?part=snippet%2CcontentDetails%2Cstatistics&forUsername=who&key={{youtube_api_key}}
+dbfuncs.js:80 request:  ::  key:5d451a99-4f41-4617-a433-36e38b79868d, name:Local Departments Validate
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/departments/validate
+dbfuncs.js:80 request:  ::  key:5eb2d085-35ae-4dba-8c16-422a1209dc88, name:Drools Workbench Delete Project
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/business-central/rest/spaces/MySpace/projects/Employee_Rostering-2
+dbfuncs.js:80 request:  ::  key:85364167-bfc6-4ebb-b3c4-bebcc791bc96, name:Null Demo - Get Objects
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:87652cd8-e408-402e-a6f0-0135ddc690ab, name:http://localhost:50307/api/Address/GetCountries/
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:50307/api/Address/GetStates
+dbfuncs.js:80 request:  ::  key:8ef6dac6-aca0-4d50-aadb-a1f1f0184434, name:Null Demo - Insert
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:99b8ccbd-de6b-446f-8e20-7a2ae8fa4139, name:Local Host - Greeting 1
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/GetSecret
+dbfuncs.js:80 request:  ::  key:9db64aab-30b2-4f6b-9cff-c8cfbd0dacf1, name:Drools Workbench Execute
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/GreetingTest2_1.0.0-SNAPSHOT
+dbfuncs.js:80 request:  ::  key:a182059f-4ef5-4133-b4f2-2146d8323b87, name:Local Departments Get
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:http://localhost:8080/departments/get
+dbfuncs.js:80 request:  ::  key:b2791975-6019-423b-9f81-a0e7d456701e, name:Disease Outbreak News
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:https://www.who.int/feeds/entity/csr/don/en/rss.xml
+dbfuncs.js:80 request:  ::  key:c15769ec-30ac-4777-a643-fa6bffc24972, name:Twitter
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=WHO
+dbfuncs.js:80 request:  ::  key:cff0d137-75cf-4308-bfed-49c0479e8995, name:Drools Workbench Get Jobs
+dbfuncs.js:89     headerDataLength:1
+dbfuncs.js:92     url:http://localhost:8080/kie-server/services/rest/server/containers/instances/get/jobs
+dbfuncs.js:80 request:  ::  key:e6beecb9-3b2d-40df-a3be-2d62ecaf7f0b, name:WHO News
+dbfuncs.js:89     headerDataLength:0
+dbfuncs.js:92     url:https://www.who.int/rss-feeds/news-english.xml

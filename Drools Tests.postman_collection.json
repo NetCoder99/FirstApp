@@ -1,0 +1,580 @@
+{
+	"info": {
+		"_postman_id": "846c401d-1c9a-4a46-be17-819e0feeea37",
+		"name": "Drools Tests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Drools Workbench Insert",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "994cb444-fa06-43d2-8152-6241c88ae390",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t  \"lookup\" : null,\r\n\t  \"commands\" : \r\n\t  [ \r\n\t    { \"insert\" : {\"object\" : \"John\"} }, \r\n\t    { \"insert\" : {\"object\" : \"Jane\"} }, \r\n\t    { \"insert\" : {\"object\" : \"George\"} }, \r\n\t    { \"insert\" : {\"object\" : \"Margret\"} } \r\n\t  ]\r\n\t}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/GreetingTest2_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"GreetingTest2_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Drools Workbench Execute",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lookup\" : null,\r\n  \"commands\" : \r\n    { \"fire-all-rules\": {\r\n    \t\"max\": 10,\r\n        \"out-identifier\": \"firedActivations\"}  \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/GreetingTest2_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"GreetingTest2_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - 001",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lookup\" : null,\r\n  \"commands\" : \r\n    { \"fire-all-rules\": {\r\n    \t\"max\": 10,\r\n        \"out-identifier\": \"firedActivations\"}  \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - Insert",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\r\n\t  \"lookup\" : \"KieSessionNullDemo\",\r\n\t  \"commands\" : \r\n\t  [ \r\n\t    { \"insert\" : {\"object\" : \"John\"} }, \r\n\t    { \"insert\" : {\"object\" : \"Jane\"} }, \r\n\t    { \"insert\" : {\"object\" : \"George\"} }, \r\n\t    { \"insert\" : {\"object\" : \"Margret\"} } \r\n\t  ]\r\n\t}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - Get Objects",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"lookup\": \"KieSessionNullDemo\",\r\n  \"commands\": [ {\r\n      \"get-objects\": \r\n      { \"objectFilter\": \"com.myspace.ClaimRecord\",\r\n        \"out-identifier\": \"ClaimRecord\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - Insert Claim",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"lookup\": \"KieSessionNullDemo\",\n    \"commands\": [\n        {\n            \"insert\": \n            {\n                \"object\": {\n                    \"com.myspace.ClaimRecord\": {\n                    \t\"record_Id\": 3,\n                        \"claim_id\": \"10X1234567\",\n                        \"claim_Sub_Type\": \"X\",\n                        \"date_Of_Service\": \"2020-01-01\"\n                    }\n\n                },\n                \"out-identifier\": \"3\",\n            \t\"return-object\": true\n            }\n        },\n        {\n            \"insert\": {\n                \"object\": {\n                    \"com.myspace.ClaimRecord\": {\n                    \t\"record_Id\": 4,\n                        \"claim_id\": \"10X1234567\",\n                        \"claim_Sub_Type\": \"X\",\n                        \"date_Of_Service\": \"2020-02-28\"\n                    }\n                },\n                \"out-identifier\": \"4\",\n            \t\"return-object\": true\n            }\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - Fire All ",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"batch-execution\": {\n        \"lookup\": \"KieSessionNullDemo\",\n        \"commands\": {\n            \"fire-all-rules\": {\n                \"max\": 1000,\n                \"out-identifier\": \"firedActivations\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Null Demo - Get Object",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commands\": [ {\r\n      \"get-object\": {\r\n        \"fact-handle\":  \"0:1:951761376:951761376:1:DEFAULT:NON_TRAIT:com.myspace.ClaimRecord\",\r\n        \"out-identifier\": \"4\"\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/containers/instances/NullDemo_1.0.0-SNAPSHOT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"containers",
+						"instances",
+						"NullDemo_1.0.0-SNAPSHOT"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kie Server Info",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commands\" : [ {\r\n    \"get-server-info\" : { }\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kie Server Containers",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wbadmin",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "wbadmin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"commands\" : [ {\r\n    \"list-containers\" : { }\r\n  } ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/kie-server/services/rest/server/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"kie-server",
+						"services",
+						"rest",
+						"server",
+						"config"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
