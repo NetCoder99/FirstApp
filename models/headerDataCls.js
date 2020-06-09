@@ -4,15 +4,6 @@ var key;
 var type;
 var value;
 
-module.exports = headerDataCls;
-
-//function headerDataCls(description,enabled,key,type,value) {
-//  this.description = description;
-//  this.enabled = enabled;
-//  this.key = key;
-//  this.type = type;
-//  this.value = value;
-//}
 function headerDataCls() {}
 headerDataCls.prototype.setFields = function hdrSetFields(hdrData) {
   this.description = hdrData.description;
@@ -25,3 +16,6 @@ headerDataCls.prototype.setFields = function hdrSetFields(hdrData) {
 headerDataCls.prototype.toString = function hdrToString() {
   return "key:" + this.key + ", value:" + this.value + ", type:" + this.type; 
 };
+
+module.exports = headerDataCls;
+

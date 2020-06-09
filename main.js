@@ -7,8 +7,8 @@ function createWindow () {
   const win = new BrowserWindow({
     width: 800,
     height: 600,
-    x: 100,
-    y: 100,
+    x: 50,
+    y: 50,
     webPreferences: {
       nodeIntegration: true
     }
@@ -19,6 +19,10 @@ function createWindow () {
 
   // Open the DevTools.
   win.webContents.openDevTools()
+
+  win.once('ready-to-show', () => {
+    console.log('ready-to-show');
+  })
 }
 
 // This method will be called when Electron has finished
